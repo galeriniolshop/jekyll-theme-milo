@@ -1,0 +1,14 @@
+# Clone repo lokal
+git clone https://github.com/username/jekyll-theme-milo
+cd jekyll-theme-milo
+
+# Install bundler
+gem install bundler
+
+# Install dependencies
+bundle install
+
+# Commit file Gemfile.lock
+git add Gemfile.lock
+git commit -m "Add Gemfile.lock for Cloudflare"
+git push
