@@ -1,14 +1,33 @@
-# Clone repo lokal
-git clone https://github.com/username/jekyll-theme-milo
-cd jekyll-theme-milo
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.4)
+      public_suffix (>= 2.0.2, < 6.0)
+    colorator (1.1.0)
+    concurrent-ruby (1.2.2)
+    em-websocket (0.5.3)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
+    eventmachine (1.2.7)
+    ...
+    jekyll (4.3.3)
+      addressable (~> 2.4)
+      colorator (~> 1.0)
+      ...
+    jekyll-feed (0.11.0)
+    jekyll-paginate (1.1.0)
+    jemoji (0.10.1)
+      jekyll (>= 3.0, < 5.0)
+      octokit (~> 4.0)
 
-# Install bundler
-gem install bundler
+PLATFORMS
+  ruby
 
-# Install dependencies
-bundle install
+DEPENDENCIES
+  jekyll (~> 4.0)
+  jekyll-feed (~> 0.11.0)
+  jekyll-paginate (~> 1.1)
+  jemoji (~> 0.10.1)
 
-# Commit file Gemfile.lock
-git add Gemfile.lock
-git commit -m "Add Gemfile.lock for Cloudflare"
-git push
+BUNDLED WITH
+   2.3.26
